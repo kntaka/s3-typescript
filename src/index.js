@@ -1,11 +1,11 @@
 import AWS from 'aws-sdk'
 import S3 from 'aws-sdk/clients/s3'
 
-AWS.config.logger = console // 通信のデバッグ用。不要であれば削除可。
+AWS.config.logger = console
 
-const accessKeyId = ''; // IAMユーザの認証情報の「アクセスキーID」から確認できます。
-const secretAccessKey = ''; // IAMユーザのシークレットアクセスキー。アクセスキーを作ったときだけ見れるやつです。
-const bucketName = ''; // 東京リージョンなら 'ap-northeast-1'
+const accessKeyId = '';
+const secretAccessKey = '';
+const bucketName = '';
 
 const bucket = new S3({
   accessKeyId: accessKeyId,
